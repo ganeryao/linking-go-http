@@ -10,27 +10,20 @@ var (
 
 type (
 	Service struct {
-		Name     string        // name of service
-		Type     reflect.Type  // type of the receiver
-		Receiver reflect.Value // receiver of methods for the service
-		Options  options       // options
+		Name    string    // name of service
+		Handler Component // Handler of the Component
+		Options options   // options
 	}
 )
 
-func ContainsHandler(name string) bool {
-	_, ok := handlers[name]
-	return ok
-}
-
-func GetHandler(name string) (*Service, bool) {
+func GetService(name string) (*Service, bool) {
 	handler, ok := handlers[name]
 	return handler, ok
 }
 
 func NewService(comp Component, opts []Option) *Service {
 	s := &Service{
-		Type:     reflect.TypeOf(comp),
-		Receiver: reflect.ValueOf(comp),
+		Handler: comp,
 	}
 	// apply options
 	for i := range opts {
@@ -40,7 +33,7 @@ func NewService(comp Component, opts []Option) *Service {
 	if name := s.Options.name; name != "" {
 		s.Name = name
 	} else {
-		s.Name = reflect.Indirect(s.Receiver).Type().Name()
+		s.Name = reflect.Indirect(reflect.ValueOf(comp)).Type().Name()
 	}
 	return s
 }
