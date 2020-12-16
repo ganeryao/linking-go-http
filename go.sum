@@ -11,6 +11,8 @@ github.com/ganeryao/linking-go-agile v0.0.0-20201209093525-8b25cb6a426a h1:zk3AP
 github.com/ganeryao/linking-go-agile v0.0.0-20201209093525-8b25cb6a426a/go.mod h1:9IraQ2Iv3Oj/o4WM7aOqVZTuQklnYJlALrWMsJOvcvw=
 github.com/ganeryao/linking-go-agile v0.0.0-20201211092559-8b728f7ac2cb h1:5emEHiNscTw/ISSbsF92CE6Uhpv3xHRSAEfTUytw/us=
 github.com/ganeryao/linking-go-agile v0.0.0-20201211092559-8b728f7ac2cb/go.mod h1:9IraQ2Iv3Oj/o4WM7aOqVZTuQklnYJlALrWMsJOvcvw=
+github.com/ganeryao/linking-go-agile v0.0.0-20201216040921-85c9807c465a h1:X33oVBW6dlfF7tKfMGLqaVTkxJK2Tfmp46/sGG7Vujc=
+github.com/ganeryao/linking-go-agile v0.0.0-20201216040921-85c9807c465a/go.mod h1:9IraQ2Iv3Oj/o4WM7aOqVZTuQklnYJlALrWMsJOvcvw=
 github.com/ganeryao/linking-go-agile v1.0.9 h1:BoE/dcCbT4xlwgRBgsudIBXUYdCLj2xfPhG41Ppb9t8=
 github.com/ganeryao/linking-go-agile v1.0.9/go.mod h1:9IraQ2Iv3Oj/o4WM7aOqVZTuQklnYJlALrWMsJOvcvw=
 github.com/go-sql-driver/mysql v1.4.0/go.mod h1:zAC/RDZ24gD3HViQzih4MyKcchzm+sOG5ZlKdlhCg5w=
